@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Nginx 启动]]></title>
+      <url>%2F2017%2F05%2F31%2Fnginx-config%2F</url>
+      <content type="text"><![CDATA[Nginx 启动标签（Nginx）： Nginx1、Mac下Nginx的启动：[html] view plain copycd usr/local/nginx/sbinsudo ./nginx2、Mac下判断配置文件是否正确[html] view plain copycd /usr/local/nginx/sbinsudo ./nginx -t3、Mac下重启Nginx[html] view plain copycd /usr/local/nginx/sbinsudo ./nginx -s reload4、Mac下Nginx的关闭查询nginx主进程号：ps -ef|grep nginx[html] view plain copy正常停止 sudo kill -QUIT 主进程号快速停止 sudo kill -TERM 主进程号]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[velocity 判断null]]></title>
       <url>%2F2017%2F05%2F10%2Fvelocity_null%2F</url>
       <content type="text"><![CDATA[Velocity 判断 null标签（Velocity）： Velocityvelocity判断是否为null有下面几种方法：1. (! $foo) 判断$foo为空，判断非空为 #if ($foo)```12. ```使用 #ifnull() 或 #ifnotnull() ($foo)```1234 要使用这个特性必须在velocity.properties文件中加入：userdirective = org.apache.velocity.tools.generic.directive.Ifnulluserdirective = org.apache.velocity.tools.generic.directive.Ifnotnull 3. 使用null工具判断 #if($null.isNull($foo)) 1注意这种方式特别有用，尤其你在需要这个判断作为一个判断字句时，比如我要你判断一个集合为null或为空时只能使用这种方式了： $if ($null.isNull($mycoll) || $mycoll.size()==0) ```]]></content>
