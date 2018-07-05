@@ -10,6 +10,13 @@
 
     
     <entry>
+      <title><![CDATA[CSS vw让overflow:auto页面滚动条出现时不跳动]]></title>
+      <url>%2F2017%2F09%2F19%2Fspring4_security4_oauth2%2F</url>
+      <content type="text"><![CDATA[CSS vw让overflow:auto页面滚动条出现时不跳动标签（CSS）： CSShtml {overflow-y: scroll;}:root {overflow-y: auto;overflow-x: hidden;}:root body {position: absolute;}body {width: 100vw;overflow: hidden;}]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[mvn 编译]]></title>
       <url>%2F2017%2F06%2F23%2Fmvn%20info%2F</url>
       <content type="text"><![CDATA[mvn 编译标签（Maven）： Mavenmaven使用exec插件运行Java main方法，以下是3种不同的操作方式。一、从命令行运行1、运行前先编译代码，exec：Java不会自动编译代码，你需要手动执行mvn compile来完成编译。[plain] view plain copymvn compile2、编译完成后，执行exec运行main方法。不需要传递参数：[plain] view plain copymvn exec:java -Dexec.mainClass=”com.vineetmanohar.module.Main”需要传递参数：[plain] view plain copymvn exec:java -Dexec.mainClass=”com.vineetmanohar.module.Main” -Dexec.args=”arg0 arg1 arg2”指定对classpath的运行时依赖：[plain] view plain copymvn exec:java -Dexec.mainClass=”com.vineetmanohar.module.Main” -Dexec.classpathScope=runtime二、在pom.xml中指定某个阶段执行[html] view plain copyorg.codehaus.mojoexec-maven-plugin1.1.1testjavacom.vineetmanohar.module.CodeGeneratorarg0arg1将CodeGenerator.main()方法的执行绑定到maven的 test 阶段，通过下面的命令可以执行main方法：[plain] view plain copymvn test三、在pom.xml中指定某个配置来执行[html] view plain copycode-generatororg.codehaus.mojoexec-maven-plugin1.1.1testjavacom.vineetmanohar.module.CodeGeneratorarg0arg1将2中的配置用标签包裹后就能通过指定该配置文件来执行main方法，如下：[plain] view plain copymvn test -Pcode-generator注：通过以下命令可以获取mvn exec的其他配置参数说明。[plain] view plain copymvn exec:help -Ddetail=true -Dgoal=java英文地址：http://www.vineetmanohar.com/2009/11/3-ways-to-run-java-main-from-maven/]]></content>
