@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[JAVA JVM]]></title>
+      <url>%2F2019%2F04%2F18%2Fjava-jvm%2F</url>
+      <content type="text"><![CDATA[JAVA JVM标签（JVM）： JVM程序计数器每一个线程在创建的时候会创建程序计数器。程序计数器是什么？程序计数器是一块较小的内存空间，它可以看做是当前线程所执行的字节码的行号指示器什么意思呢，字节码解释器工作时，就是通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、跳准、异常处理、线程恢复等基础功能都需要依赖这个计数器来完成 ；那它储存的是什么？（指令的偏移地址）// java 文件被翻译为字节码的时候，字节码大概类似于下面的样子public void haha(){// 原来的 haha 方法内部的 java 代码，被翻译为下面的类似于汇编语言的指令0 xxxx ….2 xxxx ….4 xx …5 xxx …}上面左边的 0、2、4、5 ，就是类似于字节码的行号（实际是指令的偏移地址），程序计数器中保存中的值，就是它们；字节码解释器，就是根据它们，来执行程序的。Java 虚拟机栈早期也叫 Java 栈。每个线程在创建时都会创建一个虚拟机栈,其内部保存一个个的栈帧（Stack Frame）,对应着一次次的 Java 方法调用。栈帧 是什么？？？1.局部变量表2.操作数栈3.动态连接4.方法返回地址]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Spring4 Security4 Oauth2 in Liferay]]></title>
       <url>%2F2018%2F07%2F05%2Fspring4_security4_oauth2%2F</url>
       <content type="text"><![CDATA[Spring4 Security4 Oauth2 in Liferay标签（Liferay,Spring4,oauth2,security4）： Liferay,Spring4,oauth2,security4]]></content>
